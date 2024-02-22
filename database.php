@@ -19,7 +19,8 @@ class Database {
     //Creamos una funcion que se llama conectar
     function conectar()
     {
-        //Definimos una variable y concatenamos todas las propiedades 
+        //Definimos una variable y concatenamos todas las propiedades
+        try{ 
         $conexion "mysql:host=". $this->hostname . "; dbname=" . $this->database . ";
         charset=" . $this->charset;
         //agregamos opciones con PDO
@@ -27,6 +28,17 @@ class Database {
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             //Es una configuracion para editar 
             PDO::ATTR_EMULATE_PREPARES => false
-            ]
+        ];
+        //definimos una instanncia y llamamos a los datos proporcionados y como es un atributo llamamos con "this"
+        $pdo = new PDO($conexion, $this->username, $this->passsword, $options);
+
+        //Retornamos y nos trae a la conexion a ala base de datos y vemos si tiene algun error
+        return $pdo;
+        //Agregamos una variable para capturar los mensajes
+    }catch(PDOException $e){
+    echo 'Error conexion: ' . $e->getMessage();
+    //Agragemos en exit para cuuando genere un error ya no te haga nada de cambios
+    exit;    
+    }
     }
 }
