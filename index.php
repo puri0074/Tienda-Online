@@ -30,7 +30,13 @@ $resultado = $sql->fetchaAll(PDO::FETCH_ASSOC);
 </head>
 
 <body>
-    
+    <!--Aqui Agregamos codigos para la barra de navegacion -->
+    <header>
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <strong> Tienda Online</strong>
+                </a>
     
 </body>
 </html>
