@@ -14,3 +14,19 @@ $sql->excute();
 $resultado = $sql->fetchaAll(PDO::FETCH_ASSOC);
 
 ?>
+<!--Empezamos con html crear nuestra pagina y el titulo-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo de la pagina-->
+    <title>Tienda Online</title>
+    
+     <!---->
+</head>
+<body>
+    
+</body>
+</html>
