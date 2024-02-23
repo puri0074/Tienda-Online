@@ -37,6 +37,29 @@ $resultado = $sql->fetchaAll(PDO::FETCH_ASSOC);
                 <a href="#" class="navbar-brand">
                     <strong> Tienda Online</strong>
                 </a>
+                <!--Boton desplegable para dispositivos pequeños-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data--bs-target="#navbarHeader">
+                    <!--icono del boton desplegable-->
+                    <span class="navbar-toggler-icon"></span>
+                    <button>
+                        <!--Fin del boton desplegable-->
+
+                    <!--Contenedor de la barra desplegable -->
+                    <div class="collapse navbar-collapse" id="navHeader">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Catalogo</a>
+                        </li>
+                        <!--Elemento de la barra de navegacion-->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                    </ul>
+                    <a href="carrito.php" class="btn btn-primary">Carrito</a>
+                </div>
+            </div>
+        </div>
+    </Header> 
     
 </body>
 </html>
