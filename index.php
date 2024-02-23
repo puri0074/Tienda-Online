@@ -59,7 +59,37 @@ $resultado = $sql->fetchaAll(PDO::FETCH_ASSOC);
                 </div>
             </div>
         </div>
-    </Header> 
+    </Header>
+    <!--Contenido-->
+    <main>
+        <!--Contenedor principal-->
+        <div class="container">
+            <!--Fila en clases de diseño-->
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <!--Agregamos imagen-->
+                            <img src="">
+                            <div class="card-body">
+                                <!--Titulo del producto-->
+                                <h5 class="card-title">Zapatos color cafe</h5>
+                                <!--Precio del producto-->
+                                <p class="card-text">$ 599.00</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <!--Boton de detalles-->
+                                        <a href="#" class="btn btn-primary">Detalles</a>
+                                    </div>
+                                    <!--Boton para agregar producto-->
+                                    <a href="#" class="btn btn-success">Agregar</a>
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </main>   
+
     
 </body>
 </html>
